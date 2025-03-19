@@ -1,0 +1,59 @@
+.base-input {
+  width: auto;
+  padding: 16px;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+
+  &--default {
+    background-color: #fff;
+  }
+
+  &:focus {
+    border-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  }
+
+  &--error {
+    border-color: red;
+    background-color: #fdd;
+
+    &:focus {
+      border-color: red;
+      box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+    }
+  }
+
+  &--medium {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+}
+
+.base-input::placeholder {
+  color: #777777;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.help-text {
+  font-size: 14px;
+  color: #5878c1;
+  margin: 0;
+}
+
+.error-text {
+  margin-top: 4px;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  margin: 0;
+}

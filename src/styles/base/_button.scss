@@ -1,0 +1,54 @@
+.base-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &--default {
+    background: linear-gradient(to right, #f8fef8, #cee7ce);
+    color: black;
+  }
+
+  &--default:not(:disabled):hover {
+    background: linear-gradient(to right, #cbe6ca, #95d393);
+    color: white;
+  }
+
+  &--default:not(:disabled):active {
+    background: #95d393;
+    color: white;
+  }
+
+  &--disabled:disabled {
+    background: #ededed;
+    color: #767676;
+    cursor: not-allowed;
+  }
+
+  &--loading {
+    background: #ededed;
+    color: transparent;
+    position: relative;
+    cursor: default;
+  }
+}
+
+.loader {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #767676;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

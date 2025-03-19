@@ -1,5 +1,6 @@
 export const RouteNamesEnum = {
-    home: 'Home',
+    form: 'Форма',
+    data: 'Данные'
 }
 
 export const RouteNamesErrorEnum = {

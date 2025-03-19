@@ -1,11 +1,17 @@
 import { RouteNamesEnum } from '@/router/router.types.js'
 
-const HomePage = () => import('@/pages/HomePage.vue')
+const FormPage = () => import('@/pages/FormPage.vue')
+const DataPage = () => import('@/pages/DataPage.vue')
 
 export default [
     {
         path: '/',
-        name: RouteNamesEnum.home,
-        component: HomePage,
+        name: RouteNamesEnum.form,
+        component: FormPage,
+    },
+    {
+        path: '/data',
+        name: RouteNamesEnum.data,
+        component: DataPage,
     },
 ]
